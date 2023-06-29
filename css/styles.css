@@ -16,8 +16,6 @@ body {
 
 .visually-hidden {
   visibility: hidden;
-  pointer-events: none;
-  position: absolute;;
 }
 
 .link {
