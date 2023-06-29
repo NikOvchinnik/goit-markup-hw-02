@@ -3,7 +3,7 @@
   --secondary-color: #f4f4fd;
   --text-color: #434455;
   --btn-color: #4d5ae5;
-  --hover-color:  #404bbf;
+  --hover-color: #404bbf;
   --border-color: #e7e9;
   --white-color: #fff;
 }
@@ -12,6 +12,12 @@ body {
   font-family: Roboto, sans-serif;
   color: var(--text-color);
   background: var(--white-color);
+}
+
+.visually-hidden {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;;
 }
 
 .link {
@@ -62,7 +68,7 @@ body {
 
 .header-address-link:hover,
 .header-address-link:focus {
-color: var(--hover-color)
+  color: var(--hover-color);
 }
 
 /* Main page  */
@@ -72,7 +78,7 @@ color: var(--hover-color)
 }
 
 .content-title {
-  color:  var(--white-color);
+  color: var(--white-color);
   text-align: center;
   font-size: 56px;
   line-height: 1.07;
@@ -80,7 +86,7 @@ color: var(--hover-color)
 }
 
 .content-btn {
-  color:  var(--white-color);
+  color: var(--white-color);
   background-color: var(--btn-color);
   font-weight: 500;
   line-height: 1.5;
@@ -195,7 +201,7 @@ color: var(--hover-color)
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   background-color: var(--hover-color);
-  color:  var(--white-color);
+  color: var(--white-color);
 }
 
 .works-title {
