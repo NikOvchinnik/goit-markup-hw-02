@@ -3,14 +3,14 @@
   --secondary-color: #f4f4fd;
   --text-color: #434455;
   --btn-color: #4d5ae5;
-  --btn-active-color:  #404bbf;
+  --hover-color:  #404bbf;
   --border-color: #e7e9;
   --white-color: #fff;
 }
 
 body {
   font-family: Roboto, sans-serif;
-  color: var(--basic-color);
+  color: var(--text-color);
   background: var(--white-color);
 }
 
@@ -42,7 +42,7 @@ body {
   font-size: 18px;
   font-family: Raleway, sans-serif;
   font-weight: 800;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -58,11 +58,24 @@ body {
   letter-spacing: 0.02em;
 }
 
+.header-link:hover,
+.header-link:focus {
+  color: var(--hover-color);
+}
+
+.header-address {
+  font-style: normal;
+}
+
 .header-address-link {
   color: var(--text-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
-  font-style: normal;
+}
+
+.header-address-link:hover,
+.header-address-link:focus {
+color: var(--hover-color)
 }
 
 /* Main page  */
@@ -91,7 +104,7 @@ body {
 
 .content-btn:hover,
 .content-btn:focus {
-  background-color: var(--btn-active-color);
+  background-color: var(--hover-color);
 }
 
 /* About */
@@ -104,7 +117,6 @@ body {
 }
 
 .about-text {
-  color: var(--text-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -112,34 +124,45 @@ body {
 /* Directions */
 
 .directions-title {
+  color: var(--basic-color);
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  text-align: center;
 }
 
 /* Team */
 .team {
   background-color: var(--secondary-color);
 }
+
 .team-title {
+  color: var(--basic-color);
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  text-align: center;
+}
+
+.team-item {
+  background-color: var(--white-color);
 }
 
 .team-item-title {
+  color: var(--basic-color);
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .team-text {
-  color: var(--text-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 /* Footer */
@@ -153,7 +176,7 @@ body {
   font-size: 18px;
   font-family: Raleway, sans-serif;
   font-weight: 800;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -173,7 +196,6 @@ body {
 .portfolio-btn {
   color: var(--btn-color);
   background-color: var(--secondary-color);
-  border: var(--border-color);
   text-align: center;
   font-weight: 500;
   line-height: 1.5;
@@ -184,7 +206,7 @@ body {
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-  background-color: var(--btn-active-color);
+  background-color: var(--hover-color);
   color:  var(--white-color);
 }
 
