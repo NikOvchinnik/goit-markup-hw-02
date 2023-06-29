@@ -14,19 +14,6 @@ body {
   background: var(--white-color);
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .link {
   text-decoration: none;
 }
@@ -202,6 +189,7 @@ color: var(--hover-color)
   letter-spacing: 0.04em;
   cursor: pointer;
   font-family: inherit;
+  border: var(--border-color);
 }
 
 .portfolio-btn:hover,
